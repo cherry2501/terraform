@@ -11,3 +11,11 @@ variable "common_tags" {
         Terraform = "true"
     }
 }
+
+variable "zone_id" {
+  default = "Z01267773J57SG8MZVSO"
+}
+
+variable "domain_name" {
+  default = "charanworld.online"
+}
