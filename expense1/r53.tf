@@ -5,5 +5,5 @@ resource "aws_route53_record" "expense" {
   type            = "A"
   ttl             = 1
   records         = var.instance_names[count.index] == "frontend" ? [aws_instance.terraform[count.index].public_ip] : [aws_instance.terraform[count.index].private_ip]
-  allow_overwrite = true
+  allow_overwrite = true #replaces existing records
 }
