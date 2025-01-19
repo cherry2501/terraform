@@ -1,6 +1,6 @@
 resource "aws_security_group" "allow-ssh" {
     
-    name = var.sg_nmae
+    name = var.sg_name
     description = "Allow port no 22 for ssh traffic"
 
     egress {

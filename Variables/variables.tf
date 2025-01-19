@@ -9,7 +9,7 @@ variable "instance_type" {
   
 }
 
-variable "sg_nmae" {
+variable "sg_name" {
     default = "allow_ssh"
   
 }
